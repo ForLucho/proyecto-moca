@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicio de Hotel | Veterinaria Moca Costa Rica</title>
+    <link rel="shortcut icon" href="img/moca-logo.png" />
+
+    <!-- 1. Archivo reset css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- 2. Archivos de css externos (fuentes) -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@1,8..144,500&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+
+    <!-- 3. Estilos personalizados -->
+
+</head>
+
+<body>
+    <div class="header-area" id="home">
+        <div class="header-principal">
+            <div class="logo">
+                <label for="menu-toggle" class="nav-toggle">
+                    <img style="max-width: 81.25px; max-height: 81.25px;" src="img/moca-logo.png" alt="logo de empresa">
+                </label>
+            </div>
+            <input type="checkbox" id="menu-toggle">
+            <nav id="nav-menu">
+                <div class="responsive-option"><a href="../homepage/index.html">Inicio</a></div>
+                <div class="responsive-option"><a href="#home">Hotel</a></div>
+                <div class="responsive-option"><a href="../reservacion-citas/reservacion-citas.html">Clínica</a></div>
+                <div class="responsive-option"><a href="../metodo-pagos/pagos.html">Métodos de pago</a></div>
+                <div class="responsive-option"><a href="../registro_mascotas/mascotas.html">Mascotas</a></div>
+
+            </nav>
+            <div style="display: flex;">
+                <a style="text-decoration:none;" class="btn-iniciar-sesion" href="../perfil-de-usuario/perfil-usuario.html">Mi perfil</a>
+                <a style="text-decoration:none;" class="btn-cerrar-sesion" href="../../../landing-page/index.html">Cerrar Sesión</a></div>
+        </div>
+    </div>
+    </div>
+
+    <div class="Screen-area" id="home">
+
+        <!--banner-->
+
+        <Section class="banner">
+
+            <div class="banner_image">
+
+            </div>
+            <div class="banner_text">
+                <h1>Servicios de Hotel.</h1>
+                <p>Regálale a tu mascota una experiencia única a manos de expertos dedicados al consentimiento y cuido animal.</p>
+            </div>
+        </Section>
+
+        <!--estadia-->
+
+        <section class="section-estadia" id="actividades">
+            <div class="container-title">
+                <h1>Una gran estadía para sus mascotas</h1>
+                <p>Nuestro hotel para mascotas ofrece un ambiente limpio, agradable y seguro donde sus mascotas sentirán la comodidad de casa. También ofrecemos distintos servicios de cuidado personal y entretenimientos para que sus peludos compañeros pacen
+                    un momento agradable.</p>
+            </div>
+
+        </section>
+
+        <section class="Sc-02-activities">
+
+            <div class="galeria">
+                <div class="foto">
+                    <img src="img/1Col_1.png" alt="Dos perros jugando con una pelota.">
+                </div>
+                <div class="pie">
+                    <p>Juegos para mascotas</p>
+                </div>
+            </div>
+
+            <div class="galeria">
+                <div class="foto">
+                    <img src="img/1Col_2.png" alt="Dos médicos atendiendo un perro en el SPA.">
+                </div>
+                <div class="pie">
+                    <p>Relajación en el SPA</p>
+                </div>
+            </div>
+
+            <div class="galeria">
+                <div class="foto">
+                    <img src="img/1Col_3.png" alt="Un gato comiendo.">
+                </div>
+                <div class="pie">
+                    <p>Buena Alimentación</p>
+                </div>
+            </div>
+
+            <div class="galeria">
+                <div class="foto">
+                    <img src="img/1Col_4.png" alt="Un perro siendo bañado por un médico.">
+                </div>
+                <div class="pie">
+                    <p>Cuidado de Higiene</p>
+                </div>
+            </div>
+
+
+        </section>
+        <hr style="width: 100%;border-color: #66584E;">
+        <section class="title-03-table" id="reservaciones">
+
+
+            <div class="container-title" style="margin-bottom: 40px;margin-top: 50px;">
+
+                <h1>Reservaciones de clientes</h1>
+            </div>
+
+        </section>
+
+        <section id="sct-tabla">
+            <table id="tbl-usuarios" class="tbl-info">
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Mascota</th>
+                        <th>Fecha de entrada</th>
+                        <th>Fecha de salida</th>
+                        <th>Habitación</th>
+                        <th>Dueño</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>X000</td>
+                        <td>Kira</td>
+                        <td>24/02/1000</td>
+                        <td>24/02/1000</td>
+                        <td>101</td>
+                        <td><button type="button" class="btn-editar">Editar</button><button type="button" class="btn-eliminar">Eliminar</button></td>
+                    </tr>
+                    <tr>
+                        <td>Y000</td>
+                        <td>Luna</td>
+                        <td>24/02/1000</td>
+                        <td>24/02/1000</td>
+                        <td>101</td>
+                        <td><button type="button" class="btn-editar">Editar</button><button type="button" class="btn-eliminar">Eliminar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr style="width: 100%;border-color: #66584E;">
+
+        <div id="reservar" class="form-title">
+            <h1>Reserve ahora</h1>
+        </div>
+        <p class="form-description">Se requieren todos los campos.</p>
+
+        <section class="Sc-04-Form">
+
+            <div style="display: flex;flex-direction: column;">
+
+                <div class="row">
+                    <div class="column-form">
+                        <label for="txtmascota">Mascota</label>
+                        <select id="txtmascota">
+                <option value="">-- Seleccione una mascota --</option>
+                <option value="Kira">Kira</option>
+                <option value="Luna">Luna</option>
+                <option value="Mia">Mia</option>
+            </select>
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+                    <div class="column-form">
+                        <label for="codigo">Código</label>
+                        <textarea style=" padding: 9px; font-family: 'Ubuntu'; " id="txtCodigo" cols="21" rows="5" placeholder="Por favor, asigne un código a la mascota."></textarea>
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+                    <div class="column-form">
+                        <label for="dueño">Dueño</label>
+                        <textarea style=" padding: 9px; font-family: 'Ubuntu'; " id="txtNombre" cols="21" rows="5" placeholder="Por favor, indique el nombre del dueño de la mascota."></textarea>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="column-form">
+                        <label for="fechaentrada">Fecha de entrada</label>
+                        <input type="date" id="fechaentrada">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column-form">
+                        <label for="fechasalida">Fecha de salida</label>
+                        <input type="date" id="fechasalida">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column-form">
+                        <label for="txthabitacion">Habitación</label>
+                        <select id="txthabitacion">
+                <option value="">-- Seleccione una habitación disponible --</option>
+                <option value="16">16</option>
+                <option value="49">49</option>
+                <option value="23">23</option>
+                <option value="8">8</option>
+                
+            </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column-form">
+                        <label for="txtmensaje">Observaciones</label>
+                        <textarea style=" padding: 9px; font-family: 'Ubuntu'; " id="txtmensaje" cols="21" rows="5" placeholder="Por favor, proporcione cualquier información adicional que considere que nos permita servirle mejor."></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column-form">
+                        <button class="form-button" id="btn-registrar" type="submit" data-color="rgb(75, 75, 75)" target="_self">Reservar</button>
+                    </div>
+                </div>
+
+
+                </form>
+
+        </section>
+
+        </div>
+
+        <footer class="footer-area" id="contacto">
+
+            <div class="footer-top-content">
+
+                <div class="footer--right-content">
+
+                    <div class="image-container">
+
+                        <img style="max-width: 81.25px;max-height: 81.25px;margin-left: -12px;" src="img/moca-logo.png" alt="logo de empresa">
+                        <h3 class="image-title">MOCA</h3>
+
+                    </div>
+
+                    <p class="footer-text">En la veterinaria Moca amamos los animales y queremos lo mejor para ellos, es por eso que ofrecemos servicios médicos y hotel con servicio personalizado.</p>
+
+                </div>
+
+                <div class="footer--left-content">
+
+                    <div class="footer-column">
+
+                        <h3 class="column-title">Secciones</h3>
+                        <p class="column-text"><a href="#home">Inicio</a><br><a href="#actividades">Actividades</a><br><a href="#reservaciones">Reservaciones</a><br><a href="#reservar">Reservar</a></p>
+
+                    </div>
+
+                    <div style="padding-right: 20px;" class="footer-column">
+
+                        <h3 class="column-title">Servicios</h3>
+                        <p class="column-text"><a href="../reservacion-citas/reservacion-citas.html">Clínica</a><br><a href="#home">Hotel</a></p>
+
+                    </div>
+
+                    <div class="footer-column">
+                        <h3 style="padding-left: 21px;" class="column-title">Contacto</h3>
+                        <p class="column-text">
+                            <i style="width: 60px" class="fa-solid fa-phone fa-fw"></i>(+506) 2257-4896<br>
+                            <i style="width: 60px" class="fa-solid fa-envelope fa-fw"></i>support@moca.com<br>
+                            <i style="width: 60px" class="fa-solid fa-location-dot fa-fw"></i>San José, Costa Rica
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom-content">
+
+                <div class="image-container">
+
+                    <p class="footer-bottom-text"><a style=" text-decoration: none; color: #fff; " href="../../../../alpha-web-page/index.html">Powered by Alpha</p><img src="img/alpha-logo.png" style="max-width: 15px;margin-left: 7px;" alt="logo de empresa"></a>
+
+                </div>
+
+                <p class="footer-bottom-text">Copyright © 2022, Utilizadas bajo licencias en Costa Rica</p>
+
+            </div>
+
+        </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+        <script src="js/servicio-general.js"></script>
+        <script src="js/registro-reservacion.js"></script>
+        <script src="js/reservacion-listar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.header-area {
+    background-color: #1F565E;
+    -webkit-box-shadow: 0px 1px 8px 1px rgb(0 0 0 / 84%);
+    box-shadow: 0px 1px 8px 1px rgb(0 0 0 / 84%);
+    height: 80px;
+}
+
+.header-principal {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Ubuntu', sans-serif;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.header-principal nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+}
+
+.header-principal nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header-principal nav a:hover {
+    color: #1AC79D;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+}
+
+.header-principal .logo {
+    width: 125px;
+}
+
+.btn-iniciar-sesion {
+    color: #1AC79D;
+    background-color: #172727;
+    border-radius: 15px;
+    display: flex;
+    transition: ease-in-out 0.5s;
+    width: 130px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.btn-iniciar-sesion:hover {
+    background-color: #1AC79D;
+    color: #172727 !important;
+    cursor: pointer;
+}
+
+.btn-cerrar-sesion {
+    color: #D64550;
+    background-color: #172727;
+    border-radius: 15px;
+    display: flex;
+    transition: ease-in-out 0.5s;
+    width: 130px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.btn-cerrar-sesion:hover {
+    background-color: #D64550;
+    color: #172727 !important;
+    cursor: pointer;
+}
+
+.header-principal .logo img {
+    width: 65%;
+    border-radius: 50px;
+    background-position: center;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+/** Responsive 959px */
+@media screen and (max-width: 959px) {
+    #menu-toggle:checked ~ #nav-menu {
+        display: block;
+        background: rgba(0,0,0,.5);
+    }
+    .header-principal{
+        display: block;
+    }
+
+    .header-principal div.logo {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #nav-menu {
+        display: none;
+        position: absolute;
+        text-align: center;
+    }
+    .btn-iniciar-sesion {
+        display: none;
+    }
+    .btn-cerrar-sesion {
+        display: none;
+    }
+    .header-principal nav{
+        width: 100%;
+    }
+    .responsive-option{
+        height: 30px;
+        margin-top: 20px;
+    }
+    .header-area{
+        height: unset;
+    }
+}

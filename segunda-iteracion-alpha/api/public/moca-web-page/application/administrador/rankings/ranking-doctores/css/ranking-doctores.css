@@ -1,0 +1,103 @@
+body {
+    min-height: 100vh;
+    font-family: Ubuntu;
+    background: linear-gradient(to bottom, #137B66, #1F5A5F);
+    overflow-y: hidden;
+}
+
+.top-arrow {
+    padding: 15px;
+    margin-bottom: 35px;
+}
+
+.top-arrow a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.top-arrow i {
+    padding-right: 15px;
+}
+
+.container {
+    margin: auto;
+    width: 75%;
+    height: 720px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #353636;
+    background: #fff;
+}
+
+.subcontainer-top {
+    padding: 20px;
+}
+
+.item-container {
+    text-align: center;
+    display: flex;
+}
+
+.fa-trophy {
+    background-color: #1D6161;
+    padding: 25px;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+    border-radius: 50%;
+    color: #fff;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-container h1 {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 20px;
+    color: #172727;
+}
+
+.item-container p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #505050;
+    margin-bottom: 55px;
+}
+
+.subcontainer-bottom {
+    padding: 20px;
+    overflow: auto;
+    height: 80%;
+}
+
+.tbl-info {
+    height: 350px;
+    border-collapse: collapse;
+}
+
+.tbl-info tbody tr {
+    border-bottom: 2px solid #DDDDDD;
+}
+
+.tbl-info thead {
+    color: #1D6161;
+    border-top: 2px solid #1D6161;
+    border-bottom: 2px solid #1D6161 !important;
+}
+
+.tbl-info tr th {
+    padding: 20px;
+}
+
+.tbl-info tr td {
+    font-size: 14px;
+    padding: 10px 1%;
+    text-align: center;
+    width: 5%;
+}

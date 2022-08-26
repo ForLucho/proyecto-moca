@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicio de citas | Veterinaria Moca Costa Rica</title>
+    <link rel="shortcut icon" href="img/moca-logo.png" />
+
+    <!-- 1. Archivo reset css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- 2. Archivos de css externos (fuentes) -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@1,8..144,500&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+
+    <!-- 3. Estilos personalizados -->
+
+</head>
+
+<body>
+    <div class="header-area" id="home">
+        <div class="header-principal">
+            <div class="logo">
+                <label for="menu-toggle" class="nav-toggle">
+                    <img style="max-width: 81.25px; max-height: 81.25px;" src="img/moca-logo.png" alt="logo de empresa">
+                </label>
+            </div>
+            <input type="checkbox" id="menu-toggle">
+            <nav id="nav-menu">
+                <div class="responsive-option"><a href="../homepage/index.html">Inicio</a></div>
+                <div class="responsive-option"><a href="../hotel/hotel.html">Hotel</a></div>
+                <div class="responsive-option"><a href="#home">Clínica</a></div>
+                <div class="responsive-option"><a href="../metodo-pagos/pagos.html">Métodos de pago</a></div>
+                <div class="responsive-option"><a href="../registro_mascotas/mascotas.html">Mis mascotas</a></div>
+
+            </nav>
+            <div style="display: flex;">
+                <a style="text-decoration:none;" class="btn-iniciar-sesion" href="../perfil-de-usuario/perfil-usuario.html">Mi perfil</a>
+                <a style="text-decoration:none;" class="btn-cerrar-sesion" href="../../../landing-page/index.html">Cerrar Sesión</a></div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="Screen-area" id="home">
+
+        <!--banner-->
+
+        <Section class="banner">
+
+            <div class="banner_image">
+
+            </div>
+            <div class="banner_text">
+                <h1>Servicios de citas.</h1>
+                <p>Agende su cita y consulte su estado.</p>
+            </div>
+        </Section>
+
+
+
+        </section>
+        <hr style="width: 100%;border-color: #66584E;">
+        <section class="title-03-table" id="reservaciones">
+
+
+            <div class="container-title" style="margin-bottom: 40px;margin-top: 50px;">
+
+                <h1>Sus reservaciones</h1>
+            </div>
+
+        </section>
+
+        <section id="sct-tabla">
+            <table id="tbl-usuarios" class="tbl-info">
+                <thead>
+                    <tr>
+                        <th>Dueño</th>
+                        <th>Mascota</th>
+                        <th>Fecha de cita</th>
+                        <th>Motivo de cita</th>
+                        <th>Hora de cita</th>
+                        <th>Observaciones</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>AH001</td>
+                        <td>AH001</td>
+                        <td>Kira</td>
+                        <td>24/07/2022</td>
+                        <td>Control</td>
+                        <td>3</td>
+                        <td><button type="button" class="btn-editar">Editar</button><button type="button" class="btn-eliminar">Eliminar</button></td>
+                    </tr>
+                    <tr>
+                        <td>LE002</td>
+                        <td>LE002</td>
+                        <td>Pepe</td>
+                        <td>24/07/2022</td>
+                        <td>Consulta</td>
+                        <td>4</td>
+                        <td><button type="button" class="btn-editar">Editar</button><button type="button" class="btn-eliminar">Eliminar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p class="bottom-qualify-text">*Califique su experiencia con el medico que atendió a su mascota</p>
+            <a style="text-decoration:none;" class="btn-calificar-medico" href="../calificar/calificar-medico.html">Calificar</a>
+
+        </section>
+
+        <hr style="width: 100%;border-color: #66584E;">
+
+        <div id="reservar" class="form-title">
+            <h1>Reserve ahora su cita</h1>
+        </div>
+        <p class="form-description">Se requieren todos los campos.</p>
+
+        <section class="Sc-04-Form">
+
+            <div style="display: flex;flex-direction: column;">
+
+                <div class="row">
+                    <div class="column-form">
+                        <label for="txtmascota">Mascota</label>
+                        <select id="txtmascota">
+                <option value="">-- Seleccione una mascota --</option>
+                <option value="Kira">Kira</option>
+                <option value="Luna">Luna</option>
+                <option value="Mia">Mia</option>
+            </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column-form">
+                        <label for="fechacita">Fecha de cita</label>
+                        <input type="date" id="fechacita">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column-form">
+                        <label for="motivocita">Motivo de cita</label>
+                        <input type="text" id="motivocita">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column-form">
+                        <label for="horacita">Hora de cita</label>
+                        <input type="time" id="horacita">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column-form">
+                        <label for="txtmensaje">Observaciones</label>
+                        <textarea style=" padding: 9px; font-family: 'Ubuntu'; " id="txtmensaje" cols="21" rows="5" placeholder="Por favor, proporcione cualquier información adicional que considere que nos permita servirle mejor."></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column-form">
+                        <button class="form-button" id="btn-registrar" type="submit" data-color="rgb(75, 75, 75)" target="_self">Enviar</button>
+                    </div>
+                </div>
+
+
+                </form>
+
+        </section>
+
+        </div>
+
+        <footer class="footer-area" id="contacto">
+
+            <div class="footer-top-content">
+
+                <div class="footer--right-content">
+
+                    <div class="image-container">
+
+                        <img style="max-width: 81.25px;max-height: 81.25px;margin-left: -12px;" src="img/moca-logo.png" alt="logo de empresa">
+                        <h3 class="image-title">MOCA</h3>
+
+                    </div>
+
+                    <p class="footer-text">En la veterinaria Moca amamos los animales y queremos lo mejor para ellos, es por eso que ofrecemos servicios médicos y hotel con servicio personalizado.</p>
+
+                </div>
+
+                <div class="footer--left-content">
+
+                    <div class="footer-column">
+
+                        <h3 class="column-title">Secciones</h3>
+                        <p class="column-text"><a href="#home">Inicio</a></p>
+
+                    </div>
+
+                    <div style="padding-right: 20px;" class="footer-column">
+
+                        <h3 class="column-title">Servicios</h3>
+                        <p class="column-text"><a href="#home">Clínica</a><br><a href="../hotel/hotel.html">Hotel</a></p>
+
+                    </div>
+
+                    <div class="footer-column">
+                        <h3 style="padding-left: 21px;" class="column-title">Contacto</h3>
+                        <p class="column-text">
+                            <i style="width: 60px" class="fa-solid fa-phone fa-fw"></i>(+506) 2257-4896<br>
+                            <i style="width: 60px" class="fa-solid fa-envelope fa-fw"></i>support@moca.com<br>
+                            <i style="width: 60px" class="fa-solid fa-location-dot fa-fw"></i>San José, Costa Rica
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom-content">
+
+                <div class="image-container">
+
+                    <p class="footer-bottom-text"><a style=" text-decoration: none; color: #fff; " href="../../../../alpha-web-page/index.html">Powered by Alpha</p><img src="img/alpha-logo.png" style="max-width: 15px;margin-left: 7px;" alt="logo de empresa"></a> 
+
+                </div>
+
+                <p class="footer-bottom-text">Copyright © 2022, Utilizadas bajo licencias en Costa Rica</p>
+
+            </div>
+
+        </footer>
+
+        <!-- Incluir axios cdn -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="js/mascotas.js"></script>
+        <script src="js/citas.js"></script>
+        <script src="js/citas-registro.js"></script>
+        <script src="js/citas-listar.js"></script>
+</body>
+
+</html>

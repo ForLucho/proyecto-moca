@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Mascotas | Moca Costa Rica</title>
+    <link rel="shortcut icon" href="img/moca-logo.png" />
+
+    <!-- 1. Archivo reset css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!-- 2. Archivos de css externos (fuentes) -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@1,8..144,500&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+
+
+    <!-- 3. Estilos personalizados -->
+
+</head>
+
+<body>
+
+    <div class="header-area" id="home">
+        <div class="header-principal">
+            <div class="logo">
+                <label for="menu-toggle" class="nav-toggle">
+                    <img style="max-width: 81.25px; max-height: 81.25px;" src="img/moca-logo.png" alt="logo de empresa">
+                </label>
+            </div>
+            <input type="checkbox" id="menu-toggle">
+            <nav id="nav-menu">
+                <div class="responsive-option"><a href="../homepage/index.html">Inicio</a></div>
+                <div class="responsive-option"><a href="../hotel/hotel.html">Hotel</a></div>
+                <div class="responsive-option"><a href="../reservacion-citas/reservacion-citas.html">Clínica</a></div>
+                <div class="responsive-option"><a href="../metodo-pagos/pagos.html">Métodos de pago</a></div>
+                <div class="responsive-option"><a href="#home">Mis mascotas</a></div>
+
+            </nav>
+            <div style="display: flex;">
+                <a style="text-decoration:none;" class="btn-iniciar-sesion" href="../perfil-de-usuario/perfil-usuario.html">Mi perfil</a>
+                <a style="text-decoration:none;" class="btn-cerrar-sesion" href="../../../landing-page/index.html">Cerrar Sesión</a></div>
+        </div>
+    </div>
+    </div>
+
+
+    <section class="tus-mascotas">
+
+        <div>
+            <h3>Tus mascotas</h3>
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+    <!--banner-->
+
+    <Section class="banner">
+
+        <div class="banner-image">
+
+            <img src="img/bruno.jpg" alt="Imagen de mascota">
+
+        </div>
+
+        <div class="div-tabla">
+            <table class="tbl-informacion">
+                <tbody>
+                    <tr>
+                        <td>Estado actual</td>
+                        <td>Saludable</td>
+                    </tr>
+                    <tr>
+                        <td><a href="../observaciones-mascotas/observaciones.html">Observaciones</a> </td>
+                    </tr>
+                    <tr>
+                        <td><a href="../rankings/ranking-homepage/ranking-homepage.html">Consultar Rankings</a> </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </Section>
+
+
+    <section id="sct-tabla">
+        <table id="tbl-usuarios" class="tbl-info">
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Mascota</th>
+                    <th>Fecha de nacimiento</th>
+                    <th>Dueño</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>X000</td>
+                    <td>Kira</td>
+                    <td>24/02/1000</td>
+                    <td><button type="button" class="btn-editar">Editar</button><button type="button" class="btn-eliminar">Eliminar</button></td>
+                </tr>
+                <tr>
+                    <td>Y000</td>
+                    <td>Luna</td>
+                    <td>24/02/1000</td>
+                    <td><button type="button" class="btn-editar">Editar</button><button type="button" class="btn-eliminar">Eliminar</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+
+
+
+    <section>
+
+        <div id="reservar" class="form-title">
+            <h1>Registrar mascota</h1>
+        </div>
+        <p class="form-description">Se requieren todos los campos.</p>
+
+        <section class="Sc-04-Form">
+
+            <div style="display: flex;flex-direction: column;">
+
+                <div class="row">
+                    <div class="column-form">
+                        <label for="txtmascota">Nombre de la mascota</label>
+                        <input type="text" id="txtmascota" name="firstName">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column-form">
+                        <label for="fechaentrada">Fecha de nacimiento</label>
+                        <input type="date" id="fechaentrada">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="column-form">
+                        <label for="fechasalida">Dirección</label>
+                        <input type="text" id="fechasalida">
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="column-form">
+                        <button class="form-button" id="btn-registrar" type="submit" data-color="rgb(75, 75, 75)" target="_self">Registrar</button>
+                    </div>
+
+
+        </section>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="js/usuarios.js"></script>
+        <script src="js/usuario-registro.js"></script>
+        <script src="js/usuario-listar.js"></script>
+</body>
+
+</html>

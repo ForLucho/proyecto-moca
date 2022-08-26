@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificar Médico | Moca Costa Rica</title>
+    <link rel="shortcut icon" href="img/moca-logo.png" />
+
+    <!-- 1. Archivo reset css -->
+    <link rel="stylesheet" href="css/calificar-medico.css">
+
+    <!-- 2. Archivos de css externos (fuentes) -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@1,8..144,500&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- 3. Estilos personalizados -->
+
+</head>
+
+<body>
+    <div class="top-arrow">
+        <!-- volver a la pagina anterior -->
+        <a href="javascript:history.back()" class="btn-back"><i class="fas fa-x"></i>Cancelar</a>
+    </div>
+
+    <div class="container">
+        <div class="subcontainer-top">
+            <div class="item-container">
+                <i class="fa-solid fa-star-half-stroke menu-icon"></i>
+                <h1>Califique a nuestros médicos</h1>
+            </div>
+            <hr style="margin-top: 25px;border-color: #1D6161;">
+        </div>
+
+
+        <div class="subcontainer-bottom">
+
+            <div class="content-form">
+
+                <div style="display: flex;flex-direction: column;">
+            
+                    <div class="row">
+                    <div class="column-form">
+                        <label for="txtmedico">Médicos</label>
+                        <select id="txtmedico">
+                            <option value="">-- Seleccione un médico --</option>
+                            <option value="001">Alicia Anabelle</option>
+                            <option value="002">Anabelle Samora</option>
+                            <option value="003">Nikolas González</option>
+                            <option value="004">Julian Johnson</option>
+                        </select>
+                    </div>
+                    </div>
+
+                    <div class="star-rating" id="star-ranking" value="">
+
+                        <input id="star-5" type="radio" name="rating" value="5" onclick="cambiarValor(value)"/>
+                        <label for="star-5" title="5 stars">
+                          <i class="active fa fa-star" aria-hidden="true"></i>
+                        </label>
+                        <input id="star-4" type="radio" name="rating" value="4" onclick="cambiarValor(value)"/>
+                        <label for="star-4" title="4 stars">
+                          <i class="active fa fa-star" aria-hidden="true"></i>
+                        </label>
+                        <input id="star-3" type="radio" name="rating" value="3" onclick="cambiarValor(value)"/>
+                        <label for="star-3" title="3 stars">
+                          <i class="active fa fa-star" aria-hidden="true"></i>
+                        </label>
+                        <input id="star-2" type="radio" name="rating" value="2" onclick="cambiarValor(value)"/>
+                        <label for="star-2" title="2 stars">
+                          <i class="active fa fa-star" aria-hidden="true"></i>
+                        </label>
+                        <input id="star-1" type="radio" name="rating" value="1" onclick="cambiarValor(value)"/>
+                        <label for="star-1" title="1 star">
+                          <i class="active fa fa-star" aria-hidden="true"></i>
+                        </label>
+                        
+
+                      </div>
+            
+                    <div class="row">
+                    <div class="column-form">
+                        <label for="txtmensaje">Comentarios</label>
+                        <textarea style=" padding: 9px; font-family: 'Ubuntu'; " id="txtmensaje" cols="21" rows="5" placeholder="Por favor, proporcione cualquier información adicional."></textarea>
+                    </div>   
+                    </div>
+                    
+                    <div class="row">
+                    <div class="column-form">
+                        <button class="form-button" id="btn-registrar" type="submit" data-color="rgb(75, 75, 75)" target="_self">Enviar</button>
+                    </div> 
+                </div>
+            
+            
+                </form>
+            
+            </div>  
+        </div>
+    
+</div>
+
+    <!-- Incluir axios cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/medicos.js"></script>
+    <script src="js/medico-listar.js"></script>
+    <script src="js/registrar-comentario.js"></script>
+
+</body>
+
+</html>

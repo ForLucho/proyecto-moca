@@ -1,0 +1,387 @@
+body {
+    background-color: #F8F8FF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* Seccion-Limite */
+
+.Screen-area {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* Banner "principal" */
+
+.banner_image {
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/tarjeta-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Ubuntu', sans-serif;
+    line-height: 1.6;
+    height: 450px;
+}
+
+.banner_text a {
+    background-color: #172727;
+    font-size: 15px;
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+    padding: 10px 45px 10px 45px;
+    transition: ease-in-out 0.5s;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.banner_text h1 {
+    color: #ffffff;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.banner_text p {
+    font-size: 15px;
+    color: #ffffff;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767.9px) {
+    .banner_text {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .banner_text p {
+        color: #000000;
+    }
+    .banner_text h1 {
+        color: #1F565E;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .banner_text {
+        position: absolute;
+        top: 25%;
+        max-width: 450px;
+        padding-left: 60px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .banner_text {
+        max-width: 565px;
+    }
+}
+
+
+/* Seccion-Form */
+
+.form-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    padding-left: 28px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    background: linear-gradient(141deg, #1F565E 0%, #214d53 51%, #224146 75%);
+    color: white;
+    font-size: 22px;
+    line-height: 1.25;
+    margin-top: 60px;
+}
+
+.form-description {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color: #4b4b4b;
+    font-size: 14px;
+    line-height: 1.25;
+    margin-top: 30px;
+}
+
+.Sc-04-Form {
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 80px;
+}
+
+.column-form {
+    font-size: 12px;
+    flex: 1;
+    margin: 2px;
+    line-height: 20px;
+}
+
+.column-form textarea {
+    max-width: 450px;
+    resize: none;
+    height: 135px;
+    width: 100%;
+}
+
+.Sc-04-Form .column-form label {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.Sc-04-Form .column-form input {
+    box-sizing: border-box;
+    width: 50%;
+    border: 1px #e4e3e3 solid;
+    font-size: 12px;
+    padding: 13px 10px 12px 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.Sc-04-Form .column-form textarea {
+    padding: 9px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.Sc-04-Form .row {
+    padding-top: 20px;
+}
+
+.form-button {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    background-color: #1F565E;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 10px 35px;
+    width: auto;
+    text-transform: uppercase;
+    border: 0;
+    line-height: 20px;
+}
+
+.form-button:hover {
+    background-color: #214d53;
+    color: #000;
+    transition: All .5s ease;
+    -webkit-transition: All .5s ease;
+    cursor: pointer;
+}
+
+.input-error {
+    border: 1px #C92C2C solid !important;
+}
+
+.error-text {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #C92C2C;
+}
+
+.error-text i {
+    margin-right: 5px;
+}
+
+
+/* Estilo de la tabla */
+
+.title-03-table h1 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    color: #000000;
+    padding: 0px 0px 20px 0px;
+}
+
+
+/* Estilos del thead */
+
+.tbl-info {
+    line-height: 80px;
+    margin-bottom: 50px;
+}
+
+.tbl-info thead {
+    background: #214d53;
+    color: #fff;
+    vertical-align: middle;
+}
+
+.tbl-info tbody tr {
+    line-height: 35px;
+}
+
+.tbl-info thead tr th {
+    padding: 10px 1%;
+    font-weight: bold;
+}
+
+
+/* Estilos del tbody */
+
+.tbl-info tbody tr:nth-child(even) {
+    background: #E3E3E3;
+}
+
+.tbl-info tbody tr td {
+    padding: 10px 1%;
+    text-align: center;
+    width: 5%;
+}
+
+.btn-editar {
+    background: #ff9f43;
+    border: transparent;
+    border-right: 3px solid #000;
+    cursor: pointer;
+    padding: 5px;
+    width: 60px;
+}
+
+.btn-editar:hover {
+    background: #feca57;
+}
+
+.btn-eliminar {
+    background: #ee5253;
+    border: transparent;
+    cursor: pointer;
+    padding: 5px;
+    width: 60px;
+}
+
+.btn-eliminar:hover {
+    background: #ff6b6b;
+}
+
+
+/* Footer */
+
+.footer-area {
+    background-color: #214d53;
+    padding-bottom: 25px;
+}
+
+.footer-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: #FFFFFF;
+    max-width: 300px;
+}
+
+.footer-bottom-text {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+
+/* Footer top content*/
+
+.footer-top-content {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 20px;
+    max-width: 1200px;
+    border-bottom: solid 1px #FFFFFF;
+    padding: 20px 20px 25px 20px;
+}
+
+.footer--right-content {
+    display: flex;
+    width: 365px;
+    flex-direction: column;
+}
+
+.footer--right-content .image-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.image-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #fff;
+}
+
+.column-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    margin-bottom: 15px
+}
+
+.column-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.column-text a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.column-text a:hover {
+    color: #D7B9A8;
+    transition: ease-in-out 0.5s;
+}
+
+.footer--left-content {
+    display: flex;
+    margin-top: 15px;
+    padding-right: 65px;
+}
+
+.footer-column {
+    padding: 0px 53px 0px 0px;
+}
+
+@media screen and (max-width: 959px) {
+    .footer-top-content {
+        display: inherit;
+    }
+    .footer--right-content {
+        margin: auto;
+    }
+    .footer--left-content {
+        justify-content: center;
+        margin-top: 40px;
+        padding: 0;
+    }
+}
+
+
+/* Footer bottom content*/
+
+.footer-bottom-content .image-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-bottom-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

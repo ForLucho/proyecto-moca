@@ -1,0 +1,352 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* Section */
+
+body .perfil {
+    height: 1300px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #F8F8FF;
+}
+
+
+/* Links de navegación */
+
+.perfil .opciones {
+    height: 300px;
+    width: 12%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: initial;
+    padding-left: 30px;
+}
+
+.perfil .opciones a {
+    font-size: 20px;
+    color: rgb(170, 169, 169);
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.perfil .opciones a:hover {
+    cursor: pointer;
+    color: #172727;
+}
+
+
+/* Seccion de informacion general */
+
+.perfil .seccion-general {
+    height: 1100px;
+    width: 83%;
+    background: #137B66;
+    background: -moz-linear-gradient(top, #137B66 0%, #1E585D 83%, #1F5A5F 100%);
+    background: -webkit-linear-gradient(top, #137B66 0%, #1E585D 83%, #1F5A5F 100%);
+    background: linear-gradient(to bottom, #137B66 0%, #1E585D 83%, #1F5A5F 100%);
+    margin-right: 60px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.seccion-general .informacion-personal {
+    height: 82%;
+    width: 70%;
+    background-color: #F8F8FF;
+    border-radius: 30px;
+    margin-left: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+}
+
+
+/* Foto de pefil */
+
+.seccion-general .informacion-personal .foto {
+    height: 500px;
+    width: 85%;
+    margin-left: 46px;
+    margin-top: 46px;
+}
+
+.seccion-general .informacion-personal .foto img {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* tablas */
+
+.seccion-general .informacion-personal .tbl-datos {
+    height: 260px;
+    width: 99%;
+    border-radius: 15px;
+    background-color: #157766;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin-top: 46px;
+}
+
+.seccion-general .informacion-personal .tbl-datos table {
+    padding-bottom: 5px;
+    height: 30px;
+    width: 600px;
+    text-align: center;
+    padding-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.seccion-general .informacion-personal .tbl-datos table thead .titulos {
+    background-color: #ACE5CB;
+    border-bottom: 1px #F8F8FF solid;
+    width: 50px;
+}
+
+.seccion-general .informacion-personal .tbl-datos table tbody {
+    background-color: #DCE3DB;
+}
+
+.seccion-general .informacion-personal .tbl-datos table tbody .datos {
+    width: 50px;
+}
+
+
+/* botones */
+
+.seccion-general .informacion-personal .tbl-datos table tbody tr .btn-editar {
+    background-color: #1AC79D;
+    border: none;
+}
+
+.seccion-general .informacion-personal .tbl-datos table tbody tr .btn-editar:hover {
+    background-color: #F8F8FF;
+    cursor: pointer;
+}
+
+.seccion-general .informacion-personal .tbl-datos table tbody tr .btn-eliminar {
+    background-color: #EB0D46;
+    margin-left: 5px;
+    border: none;
+}
+
+.seccion-general .informacion-personal .tbl-datos table tbody tr .btn-eliminar:hover {
+    background-color: #F8F8FF;
+    cursor: pointer;
+}
+
+.seccion-general .tbl-inf-direccion {
+    height: 250px;
+    background-color: #F8F8FF;
+    border-radius: 30px;
+    margin-left: 46px;
+    padding-top: 70px;
+    margin-right: 46px;
+    margin-bottom: 20px;
+}
+
+.seccion-general .tbl-inf-direccion table thead tr th {
+    background-color: #157766;
+    color: #F8F8FF;
+    height: 50px;
+    width: 500px;
+    font-size: 20px;
+    padding-top: 12px;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.seccion-general .tbl-inf-direccion #tabla-con-direcciones tbody {
+    background-color: #DCE3DB;
+    height: 50px;
+    width: 300px;
+    font-size: 20px;
+    padding-top: 12px;
+    font-family: 'Ubuntu', sans-serif;
+    padding-left: 135px;
+    text-align: center;
+}
+
+.seccion-general .tbl-inf-direccion table tbody .btn-editar {
+    background-color: #1AC79D;
+    border: none;
+    margin-left: 10px;
+}
+
+.seccion-general .tbl-inf-direccion table tbody .btn-editar:hover {
+    background-color: #F8F8FF;
+    cursor: pointer;
+}
+
+.seccion-general .tbl-inf-direccion table tbody .btn-eliminar {
+    background-color: #EB0D46;
+    margin-left: 5px;
+    border: none;
+}
+
+.seccion-general .tbl-inf-direccion table tbody .btn-eliminar:hover {
+    background-color: #F8F8FF;
+    cursor: pointer;
+}
+
+.form-button {
+    transition: ease-in-out 0.5s;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    background-color: #1AC79D;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 10px 35px;
+    text-transform: uppercase;
+    border: 0;
+    line-height: 20px;
+    width: 50%;
+    height: 45px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-button:hover {
+    background-color: #172727;
+    color: #fff;
+    transition: All .5s ease;
+    -webkit-transition: All .5s ease;
+    cursor: pointer;
+}
+
+
+/* Footer */
+
+.footer-area {
+    background-color: #1F565E;
+    padding-bottom: 25px;
+}
+
+.footer-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    color: #FFFFFF;
+    max-width: 300px;
+}
+
+.footer-bottom-text {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+
+/* Footer top content*/
+
+.footer-top-content {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 20px;
+    max-width: 1200px;
+    border-bottom: solid 1px #FFFFFF;
+    padding: 20px 20px 25px 20px;
+}
+
+.footer--right-content {
+    display: flex;
+    width: 365px;
+    flex-direction: column;
+}
+
+.footer--right-content .image-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.image-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: #fff;
+}
+
+.column-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    margin-bottom: 15px
+}
+
+.column-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.column-text a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.column-text a:hover {
+    color: #1AC79D;
+    transition: ease-in-out 0.5s;
+}
+
+.footer--left-content {
+    display: flex;
+    margin-top: 15px;
+    padding-right: 65px;
+}
+
+.footer-column {
+    padding: 0px 53px 0px 0px;
+}
+
+@media screen and (max-width: 959px) {
+    .footer-top-content {
+        display: inherit;
+    }
+    .footer--right-content {
+        margin: auto;
+    }
+    .footer--left-content {
+        justify-content: center;
+        margin-top: 40px;
+        padding: 0;
+    }
+}
+
+
+/* Footer bottom content*/
+
+.footer-bottom-content .image-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-bottom-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

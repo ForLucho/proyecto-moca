@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* Banner grande mascota */
+
+.tus-mascotas {
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    background: #137B66;
+    background: -moz-linear-gradient(top, #137B66 0%, #1E585D 83%, #1F5A5F 100%);
+    background: -webkit-linear-gradient(top, #137B66 0%, #1E585D 83%, #1F5A5F 100%);
+    background: linear-gradient(to bottom, #137B66 0%, #1E585D 83%, #1F5A5F 100%);
+    margin-bottom: 145px;
+}
+
+.tus-mascotas div h3 {
+    color: white;
+    font-size: 36px;
+}
+
+.tus-mascotas div {
+    border-bottom: solid white;
+    width: 50%;
+    text-align: center;
+    height: 50px;
+}
+
+.banner {
+    padding-left: 235px;
+    height: 705px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.banner-image {
+    height: 700px;
+    width: 65%;
+}
+
+.banner-image img {
+    height: 100%;
+    width: 100%;
+}
+
+.banner .div-tabla {
+    height: 700px;
+    width: 35%;
+}
+
+.banner .div-tabla .tbl-informacion {
+    margin-top: 40%;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.banner .div-tabla .tbl-informacion tr {
+    height: 60px;
+    width: 570px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 250px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    padding-left: 50px;
+}
+
+.banner .div-tabla .tbl-informacion tr:nth-child(odd) {
+    background-color: #E3E3E3;
+}
+
+.banner .div-tabla .tbl-informacion tr td a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* Seccion-Form */
+
+.form-title {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    padding-left: 28px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    background: #137B66;
+    background: -moz-linear-gradient(top, #137B66 0%, #1E585D 83%, #1F5A5F 100%);
+    background: -webkit-linear-gradient(top, #137B66 0%, #1E585D 83%, #1F5A5F 100%);
+    background: linear-gradient(to bottom, #137B66 0%, #1E585D 83%, #1F5A5F 100%);
+    color: white;
+    font-size: 22px;
+    line-height: 1.25;
+    margin-top: 60px;
+}
+
+.form-description {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    color: #4b4b4b;
+    font-size: 14px;
+    line-height: 1.25;
+    margin-top: 30px;
+}
+
+.Sc-04-Form {
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 80px;
+}
+
+.column-form {
+    font-size: 12px;
+    flex: 1;
+    margin: 2px;
+    line-height: 20px;
+}
+
+.column-form textarea {
+    max-width: 450px;
+    resize: none;
+    height: 135px;
+    width: 100%;
+}
+
+.Sc-04-Form .column-form label {
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.Sc-04-Form .column-form input {
+    box-sizing: border-box;
+    width: 50%;
+    border: 1px #e4e3e3 solid;
+    font-size: 12px;
+    padding: 13px 10px 12px 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.Sc-04-Form .column-form textarea {
+    padding: 9px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.Sc-04-Form .row {
+    padding-top: 20px;
+}
+
+.form-button {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    background-color: #137B66;
+    color: #FFFFFF;
+    font-size: 14px;
+    padding: 10px 35px;
+    width: auto;
+    text-transform: uppercase;
+    border: 0;
+    line-height: 20px;
+}
+
+.form-button:hover {
+    background-color: #1AC79D;
+    color: #000;
+    transition: All .5s ease;
+    -webkit-transition: All .5s ease;
+    cursor: pointer;
+}
+
+.input-error {
+    border: 1px #C92C2C solid !important;
+}
+
+.error-text {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #C92C2C;
+}
+
+.error-text i {
+    margin-right: 5px;
+}
+
+
+/* Estilos del thead */
+
+.tbl-info {
+    line-height: 80px;
+    margin-bottom: 50px;
+}
+
+.tbl-info thead {
+    background: #137B66;
+    background: -moz-linear-gradient(top, #137B66 0%, #1E585D 83%, #1F5A5F 100%);
+    background: -webkit-linear-gradient(top, #137B66 0%, #1E585D 83%, #1F5A5F 100%);
+    background: linear-gradient(to bottom, #137B66 0%, #1E585D 83%, #1F5A5F 100%);
+    color: #fff;
+    vertical-align: middle;
+}
+
+.tbl-info tbody tr {
+    line-height: 35px;
+}
+
+.tbl-info thead tr th {
+    padding: 10px 1%;
+    font-weight: bold;
+}
+
+
+/* Estilos del tbody */
+
+.tbl-info tbody tr:nth-child(even) {
+    background: #E3E3E3;
+}
+
+.tbl-info tbody tr td {
+    padding: 10px 1%;
+    text-align: center;
+    width: 5%;
+}
+
+.btn-editar {
+    background: #ff9f43;
+    border: transparent;
+    border-right: 3px solid #000;
+    cursor: pointer;
+    padding: 5px;
+    width: 60px;
+}
+
+.btn-editar:hover {
+    background: #feca57;
+}
+
+.btn-eliminar {
+    background: #ee5253;
+    border: transparent;
+    cursor: pointer;
+    padding: 5px;
+    width: 60px;
+}
+
+.btn-eliminar:hover {
+    background: #ff6b6b;
+}

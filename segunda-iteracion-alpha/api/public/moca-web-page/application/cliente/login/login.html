@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión | Moca Costa Rica</title>
+    <link rel="shortcut icon" href="img/moca-logo.png" />
+
+    <!-- 1. Archivo reset css -->
+    <link rel="stylesheet" href="css/login.css">
+
+    <!-- 2. Archivos de css externos (fuentes) -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@1,8..144,500&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- 3. Estilos personalizados -->
+
+</head>
+
+<body>
+    <div class="top-arrow">
+        <a href="../../tipo-usuario/tipo-usuario.html"><i class="fa-solid fa-arrow-left-long"></i>Volver a la página principal</a>
+    </div>
+
+    <div class="container">
+        <div class="item-container">
+            <img style="max-width: 110px;" src="img/moca-logo-green.png" alt="logo de empresa">
+        </div>
+        <hr style="margin-top: 25px;width: 90%;border-color: #1D6161;">
+
+        <div class="item-container">
+            <h1>Iniciar Sesión</h1>
+            <p>Inicia sesión en Moca para empezar a utilizar nuestros servicios y poder brindarles lo mejores contactos a sus mascotas.</p>
+        </div>
+
+        <section class="Sc-04-Form">
+
+    <div>
+
+        <div class="input-field">
+            <i class="fa-solid fa-circle-user input-icon"></i>
+            <input type="text" placeholder="Número de Cédula" id="txtcedula">
+        </div>
+        
+        
+        <div class="input-field">
+            <i class="fa-solid fa-key input-icon"></i>
+            <input type="password" placeholder="Contraseña" id="contrasenia">
+        </div>
+
+        <div>
+            <a style="text-decoration:none;" id="btnIniciar" class="btn-iniciar-sesion">Iniciar sesión</a>
+        </div>
+
+        <div class="bottom-options">
+            <a style="text-decoration:none;" class="btn-restaurar">¿No tienes una cuenta de Moca?</a>
+            <a style="text-decoration:none;" class="btn-registrar" href="../registro-cliente/signup.html"> Regístrate</a>
+        </div>
+
+    </div>
+    
+</section>
+    
+</div>
+
+    <!-- Incluir axios cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/usuario-login.js"></script>
+
+</body>
+
+</html>

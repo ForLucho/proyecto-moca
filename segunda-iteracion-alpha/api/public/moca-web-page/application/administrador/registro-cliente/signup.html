@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión | Moca Costa Rica</title>
+    <link rel="shortcut icon" href="img/moca-logo.png" />
+
+    <!-- 1. Archivo reset css -->
+    <link rel="stylesheet" href="css/signup.css">
+
+    <!-- 2. Archivos de css externos (fuentes) -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@1,8..144,500&family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <!-- 3. Estilos personalizados -->
+
+</head>
+
+<body>
+    <div class="top-arrow">
+        <a href="../perfil-de-usuario/perfil-usuario.html"><i class="fa-solid fa-arrow-left-long"></i>Volver a Mi perfil</a>
+    </div>
+
+    <div class="container">
+        <div class="item-container">
+            <img style="max-width: 55px;" src="img/moca-logo-green.png" alt="logo de empresa">
+        </div>
+        <hr style="width: 90%;border-color: #1D6161;">
+
+        <div class="item-container">
+            <h1>Registrar usuario</h1>
+        </div>
+
+        <div style="padding: 0px 75px 0px 75px;">
+
+            <div class="input-field">
+                <i class="fa-solid fa-users input-icon"></i>
+                <select id="txtusuario">
+                <option value="">-- Seleccione un tipo de usuario --</option>
+                <option value="Administrador">Administrador</option>
+                <option value="Medico">Médico</option>
+                <option value="Secretario">Secretario</option>
+                <option value="Cliente">Cliente</option>
+            </select>
+            </div>
+
+            <div class="input-field">
+                <i class="fa-solid fa-circle-user input-icon"></i>
+                <input type="text" placeholder="Número de Cédula" id="txtcedula">
+            </div>
+
+            <div class="two-col">
+                <div class="input-field">
+                    <i class="fa-solid fa-pen input-icon"></i>
+                    <input type="text" placeholder="Nombre" id="txtnombre">
+                </div>
+
+                <div class="input-field">
+                    <i class="fa-solid fa-pen input-icon"></i>
+                    <input type="text" placeholder="Apellido" id="txtapellido">
+                </div>
+            </div>
+
+            <div class="input-field">
+                <i class="fa-solid fa-location-dot input-icon"></i>
+                <select id="txtprovincia">
+                <option value="">-- Seleccione una provincia --</option>
+                <option value="San Jose">San José</option>
+                <option value="Alajuela">Alajuela</option>
+                <option value="Cartago">Cartago</option>
+                <option value="Heredia">Heredia</option>
+                <option value="Puntarenas">Puntarenas</option>
+                <option value="Limon">Limón</option>
+                <option value="Guanacaste">Guanacaste</option>
+            </select>
+            </div>
+
+            <div class="input-field">
+                <i class="fa-solid fa-envelope input-icon"></i>
+                <input type="text" placeholder="Correo electrónica" id="txtmail">
+            </div>
+
+
+            <div class="input-field">
+                <i class="fa-solid fa-phone input-icon"></i>
+                <input type="tel" placeholder="Número de teléfono" id="numtelefono">
+            </div>
+
+            <div class="input-field">
+                <i class="fa-solid fa-key input-icon"></i>
+                <input type="text" placeholder="Contraseña" id="contrasenia">
+            </div>
+
+            <div>
+                <a style="text-decoration:none;" id="btnRegistrar" class="btn-registrar">Registrar usuario</a>
+            </div>
+
+        </div>
+
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/usuario-signup.js"></script>
+
+</body>
+
+</html>

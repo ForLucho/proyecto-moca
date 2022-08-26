@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.header-principal {
+    align-items: center;
+    background-color: white;
+    -webkit-box-shadow: 0px 8px 17px -17px #000000;
+    box-shadow: 0px 8px 17px -17px #000000;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.header-principal nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 70px;
+    width: 50%;
+}
+
+.header-principal a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.header-principal a:hover {
+    color: #283D50;
+}
+
+.header-principal .logo {
+    width: 125px;
+}
+
+.header-principal .logo img {
+    width: 65%;
+    border-radius: 50px;
+    background-position: center;
+}
+
+.btn-celeste {
+    background-color: #3abab4;
+    border-radius: 5px;
+    height: 40px;
+    width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-principal .btn-celeste {
+    color: #1d1c21;
+}
+
+.header-principal .btn-celeste:hover {
+    color: #fff;
+}
